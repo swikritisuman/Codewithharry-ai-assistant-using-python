@@ -69,7 +69,7 @@ if __name__ == "__main__":
         elif 'open  Stackoverflow' in  query:
             webbrowser.open("stackoverflow.com")
         elif 'the time' in query:
-            strTime = datetime.datetime.now().strtime("%H:%M:%S")
+            strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"The time is {strTime}")
         elif 'open code' in query:
             codePath = "C:\\Users\\swikr\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
